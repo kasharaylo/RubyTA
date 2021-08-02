@@ -7,15 +7,15 @@ Feature: Visitor Registration and Login
 Background:
     Given I visit Redmine homepage
 
-# @scenario1
-# Scenario: Visitor successfully sign up
-#     When I click click 'register' button
-#     And I fill in registration form
-#     Then I see that I become logged in user
+@scenario1
+Scenario: Visitor successfully sign up
+    When I click click 'register' button
+    And I fill in registration form
+    Then I see that I become logged in user
 
 @scenario2
 Scenario: Visitor successfully sign in
-    Given I have prerigistered user
+#    Given I have preregistered user
 
     When I click click 'login' button
     And I fill in login form

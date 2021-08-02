@@ -7,7 +7,10 @@ When(/^I visit Redmine homepage$/) do
 end
 
 Then(/^I see website name$/) do
-  expect(page).to have_content 'Redmine@testautomate.me'
+  # Cucumber
+  # expect(page).to have_content 'Redmine@testautomate.me'
 
-  sleep 5
+  # Page Object
+  expect(@home_page.header.text).to include 'Redmine@testautomate.me'
+  sleep 2
 end
